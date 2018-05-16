@@ -1,4 +1,4 @@
-CREATE TABLE jobs (
+CREATE TABLE Jobs(
   id INT NOT NULL AUTO_INCREMENT,
   businessZones VARCHAR(60),
   city VARCHAR(15),
@@ -19,7 +19,7 @@ CREATE TABLE jobs (
   industryField VARCHAR(60),
   industryLables VARCHAR(120),
   jobNature VARCHAR(15),
-  lastLogin TIMESTAMP,
+  lastLogin BIGINT,
   latitude VARCHAR(15),
   longitude VARCHAR(15),
   linestaion VARCHAR(120),
@@ -40,4 +40,4 @@ CREATE TABLE jobs (
   KEY idx_sname(stationname),
   KEY idx_subw(subwayline)
   )
-ENGINE = InnoDB;
+ENGINE = InnoDB DEFAULT CHARSET=utf8mb4 DEFAULT COLLATE utf8mb4_unicode_ci;
